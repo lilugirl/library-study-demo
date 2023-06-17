@@ -6,5 +6,7 @@ module.exports={
         format:'es',
         banner:common.banner
     },
-    plugins:[common.getCompiler()]
+    plugins:[common.getCompiler(), ['@babel/plugin-transform-runtime',{
+        corejs:2
+    }]]
 }

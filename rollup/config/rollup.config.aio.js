@@ -10,6 +10,9 @@ module.exports = {
   },
   plugins: [
     common.getCompiler(),
+    ['@babel/plugin-transform-runtime',{
+      corejs:2
+  }],
     nodeResolve({
       main: true,
     }),

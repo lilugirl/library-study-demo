@@ -1,6 +1,6 @@
 {
   "name": "liuyi-clone",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "dist/index.js",
   "jsnext:main": "dist/index.esm.js",
@@ -19,9 +19,14 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.1.2",
+    "@babel/plugin-transform-runtime": "^7.22.5",
     "@babel/preset-env": "^7.1.0",
     "rollup": "^0.57.1",
     "rollup-plugin-babel": "^4.0.3",
     "rollup-plugin-node-resolve": "^3.0.3"
+  },
+  "dependencies": {
+    "@babel/runtime-corejs2": "^7.22.5",
+    "core-js": "^3.31.0"
   }
 }

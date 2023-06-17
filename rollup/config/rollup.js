@@ -22,7 +22,9 @@ function getCompiler(opt){
             loose:true
         }
        ]],
+      
        exclude:'node_modules/**',
+      
     })
 }
 
