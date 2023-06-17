@@ -9,6 +9,7 @@ module.exports = {
     banner: common.banner,
   },
   plugins: [
+    common.getCompiler(),
     nodeResolve({
       main: true,
     }),
