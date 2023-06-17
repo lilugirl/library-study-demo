@@ -1,3 +1,3 @@
-import clone from 'liuyi-clone'
+const clone =require('liuyi-clone')
 
 console.log(clone)
