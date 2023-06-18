@@ -8,7 +8,7 @@
   "sideEffects": false,
   "private": false,
   "scripts": {
-    "test": "mocha",
+    "test": "cross-env NODE_ENV=test nyc mocha",
     "build:self": "rollup -c config/rollup.config.js",
     "build:esm": "rollup -c config/rollup.config.esm.js",
     "build:umd": "rollup -c config/rollup.config.aio.js",
@@ -21,8 +21,12 @@
     "@babel/core": "^7.1.2",
     "@babel/plugin-transform-runtime": "^7.22.5",
     "@babel/preset-env": "^7.1.0",
+    "@babel/register": "^7.0.0",
+    "babel-plugin-istanbul": "^5.1.0",
+    "cross-env": "^5.2.0",
     "expect.js": "^0.3.1",
     "mocha": "^3.5.3",
+    "nyc": "^13.1.0",
     "rollup": "^0.57.1",
     "rollup-plugin-babel": "^4.0.3",
     "rollup-plugin-node-resolve": "^3.0.3"
