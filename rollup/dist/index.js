@@ -1,5 +1,5 @@
 /*!
- * liuyi-clone 1.0.5
+ * liuyi-clone 1.0.12
  * Licensed under MIT
  */
 
