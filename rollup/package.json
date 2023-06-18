@@ -9,6 +9,7 @@
   "private": false,
   "scripts": {
     "test": "cross-env NODE_ENV=test nyc mocha",
+    "test:puppeteer":"node test/browser/puppeteer.js",
     "build:self": "rollup -c config/rollup.config.js",
     "build:esm": "rollup -c config/rollup.config.esm.js",
     "build:umd": "rollup -c config/rollup.config.aio.js",
@@ -28,6 +29,7 @@
     "mocha": "^3.5.3",
     "mocha-jsdom": "^2.0.0",
     "nyc": "^13.1.0",
+    "puppeteer": "^5.5.0",
     "rollup": "^0.57.1",
     "rollup-plugin-babel": "^4.0.3",
     "rollup-plugin-node-resolve": "^3.0.3"
